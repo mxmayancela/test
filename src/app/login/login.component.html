@@ -1,0 +1,29 @@
+<div class="hold-transition login-page">
+  <div class="login-box">
+    <div class="card">
+      <div class="card-body login-card-body">
+        <p class="login-box-msg">INICIO DE SESIÓN</p>
+
+        <form (ngSubmit)="onSubmit(loginForm)" #loginForm="ngForm">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+            </div>
+            <input type="email" class="form-control" placeholder="Email" name="email" ngModel>
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-lock"></i></span>
+            </div>
+            <input type="password" class="form-control" placeholder="Password" name="password" ngModel>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
